@@ -1,11 +1,39 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-  </head>
-  <body>
+{#т.е. готовый index.html должен быть в таком формате.#}
+{#По аналогии сделай и group_list#}
+{% extends 'base.html' %}
+{% block title %}{{ title }}{% endblock %}
+{% block content %}
+  <div class="container py-5">
+    <h1>Последние обновления на сайте</h1>
+      ...
+    {#  Вывод постов#}
+  </div>
+{% endblock %}
+
+
+{#Наследование работает таким образом.#}
+{#Представь, что весь код из base.html копируется сюда.#}
+{#А потом блоки этого кода ты переопределяешь.#}
+{#Например: {% block title %}{{ title }}{% endblock %}#}
+
+{#Попробуй для понимания в index.html написать тольк одну строку {% extends 'base.html' %} и #}
+{#посмотреть, что будет, открыв главну страницу в браузере#}
+
+{#Т.е. Эти строки попадут сюда из base.html#}
+{#<!DOCTYPE html>#}
+{#<html lang="ru">#}
+{#  <head>#}
+{#  </head>#}
+{#  <body>#}
+
+{## Это должно быть верхней строкой.#}
     {% extends 'base.html' %}
       {% block content %}
         <h1>{{ text }}</h1>
       {% endblock %}
-  </body>
-</html>
+{#  </body>#}
+{#</html>#}
+
+
+
+
