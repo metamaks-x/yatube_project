@@ -2,6 +2,8 @@
 {% block title %}{{ group }}{% endblock %}
 {% block content %}
 {% for group in posts %}
+
+
   <main>
     <!-- класс py-5 создает отступы сверху и снизу блока -->
       </p>
@@ -19,5 +21,7 @@
       {% if not forloop.last %}<hr>{% endif %}
       <!-- под последним постом нет линии -->
   </main>
+
+
 {% endfor %}
 {% endblock %}
