@@ -2,5 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hw02_project" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/yatube_project" vcs="Git" />
   </component>
 </project>
